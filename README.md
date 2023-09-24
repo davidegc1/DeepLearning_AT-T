@@ -33,3 +33,33 @@ These are the results for each model on the validation set.
 ### Binary Cross Entropy Loss
 
 ![Loss](loss.png)
+
+## Model Parameters
+
+- Optimizer: Adam
+- Loss: Binary Cross Entropy
+- Metric: Accuracy
+- Epochs: 30
+- Positive Threshold: 0.50
+
+## Best Model
+
+Experiment 7 was the best model, as it had the highest true positive rate and lowest loss. Train-Val-Test Split: 80-10-10.
+
+### Architecture
+
+![Architecture](final_model_architecture.png)
+
+## Use Model
+
+To import the model and use it, you may use the following code.
+
+1. Open your computer's Command Line, or Terminal, and run this code.
+   `git clone https://github.com/davidegc1/DeepLearning_AT-T.git`
+
+2. Open the downloaded folder in the code editor of your choice.
+
+3. Create a new notebook, where you would like to work. Once in there run this code.
+`import joblib
+ joblib.load(att_deeplearning_model)`
+
