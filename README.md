@@ -15,3 +15,21 @@ AT&T has been able to manually flag spam messages for a time, but they are looki
 The goal is to build a spam detector, that can automatically flag spams as they come based solely on the sms' content.
 
 ## Built Models
+
+4 Machine Learning models were built, as well as 9 different Deep Learning models. They are referred to as "experiments" in this project.
+
+Each experiment had some tweaking from the previous one, such as adding a different type of layer or changing the parameters
+in said layer. Some of the tweaking includes adding Dense layers, Dropout layers, increasing neurons, early stopping and 
+increasing training data.
+
+## Model Metrics
+
+These are the results for each model on the validation set.
+
+### Recall
+
+![Recall](recall.png)
+
+### Binary Cross Entropy Loss
+
+![Loss](loss.png)
