@@ -55,11 +55,20 @@ Experiment 7 was the best model, as it had the highest true positive rate and lo
 To import the model and use it, you may use the following code.
 
 1. Open your computer's Command Line, or Terminal, and run this code.
+   
    `git clone https://github.com/davidegc1/DeepLearning_AT-T.git`
 
 2. Open the downloaded folder in the code editor of your choice.
 
 3. Create a new notebook, where you would like to work. Once in there run this code.
-`import joblib
- joblib.load(att_deeplearning_model)`
+   
+`import joblib`
+`model = joblib.load(att_deeplearning_model)`
+
+4. Make predictions on your preprocessed data.
+   This two pieces of code will make predictions on your data, where the threshold for a positive prediction (1) is of 0.50.
+   Predictions will be stored on *prediction_labels* variable.
+
+`predictions = model.predict(data)`
+`prediction_labels = np.where(preds > 0.5, 1, 0)`
 
