@@ -71,5 +71,6 @@ To import the model and use it, you may use the following code.
    Predictions will be stored on *prediction_labels* variable.
 
 `predictions = model.predict(data)`
+
 `prediction_labels = np.where(preds > 0.5, 1, 0)`
 
