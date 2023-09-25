@@ -63,6 +63,7 @@ To import the model and use it, you may use the following code.
 3. Create a new notebook, where you would like to work. Once in there run this code.
    
 `import joblib`
+
 `model = joblib.load(att_deeplearning_model)`
 
 4. Make predictions on your preprocessed data.
